@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"name": "python",
+			"path": "..\\python"
+		},
+		{
+			"name": "2022_generative_model",
+			"path": "..\\..\\DIYA generative\\2022_generative_model"
+		},
+		{
+			"name": "front_end",
+			"path": "..\\front_end"
+		},
+		{
+			"name": "C",
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.py": "python",
+			"cmath": "c"
+		}
+	}
+}

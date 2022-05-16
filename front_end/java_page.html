@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        h1, h2 {font-size:20pt; margin:20px 20px;text-align:center;}
+        .studylist {color:grey; text-decoration: underline;}
+        #now {color:blue;}
+    </style>
+    <meta charset="utf-8">
+</head>
+
+<!-- 우선순위 1. tag 2. id 3. class -->
+<!-- 우선순위 1. tag 2. id 3. class, class 중에선 나중에 나온거 -->
+
+<!-- 화면 전체 element -> block element, 줄바꿈 없이 -> inline element -->
+<!-- display:inline, block으로 구분 가능하다. none 하면 안보임. -->
+
+<!-- margin은 border 외부 간격, padding은 border 내부 간격 -->
+
+<body>
+<div style="background-color:lightgrey;padding:30px;border-bottom:2px solid grey">
+    <title>JavaScriptPage</title>
+    <h1>Web Studying Page</h1>
+</div>
+<div>
+    <div style="width:30%;height:130px;float:left;margin:left 10px; margin-top:10px; margin-left: 5px;border-right:2px solid grey">
+        <strong><u>What should I study?</u></strong>
+        <ol>
+            <li><a href="html_page.html" class='studylist'>HTML</a></li>
+            <li ><a href="css_page.html"class='studylist' >CSS</a></li>
+            <li><a href="java_page.html"class='studylist' id="now">JavaScript</a></li>
+            <li><a href="my_page.html" class="studylist"> My page</a></li>
+        </ol>
+    </div>
+    <div style="width:45%;height:130px;float:left; margin:10px 20px;">
+        <strong><u>What Will I make?</u></strong>
+        <ol>
+            <li>make a <u>to-do list</u></li>
+            <li>make a <u>simple calculator</u></li>
+            <li>make a <u>schedule sheet maker</u></li>
+        </ol>
+    </div>
+</div>
+
+</body>
