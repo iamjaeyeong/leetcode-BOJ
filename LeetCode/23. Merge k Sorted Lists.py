@@ -5,7 +5,7 @@ class ListNode:
 import heapq
 
 class Solution:
-    def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
+    def mergeKLists(self, lists):
         heap = []
         for i in lists:
             while i:
