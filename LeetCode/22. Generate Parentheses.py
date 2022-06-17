@@ -1,5 +1,5 @@
 class Solution:
-    def generateParenthesis(self, n: int) -> List[str]:
+    def generateParenthesis(self, n: int):
         def generate(s, n, a, b, p):
             if a==n and b==n:
                 p.append(s)
