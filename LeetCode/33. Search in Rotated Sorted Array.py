@@ -1,5 +1,5 @@
 class Solution:
-    def search(self, nums: List[int], target: int) -> int:
+    def search(self, nums, target: int) -> int:
         def find_pivot(nums, s, e):
             if s+1>=e:
                 if nums[s-1]>nums[s]:
