@@ -5,7 +5,6 @@ class Solution:
             for j in range(9):
                 if board[i][j]=='.':
                     board[i][j] = 0
-                    zero_pos.append([j, i])
                 else:
                     board[i][j] = int(board[i][j])
         
@@ -35,8 +34,6 @@ class Solution:
         
         def dfs(board, cnt, zero_pos):
             if cnt==len(zero_pos):
-                for i in board:
-                    print(i)
                 return 1
             col = zero_pos[cnt][0]
             row = zero_pos[cnt][1]
@@ -48,6 +45,23 @@ class Solution:
                     return 1
             board[row][col] = 0
         
+        while 1:
+            stop = 1
+            for i in range(9):
+                for j in range(9):
+                    if board[i][j]==0:
+                        candidates = find_candidates(board, j, i)
+                        if len(candidates)==1:
+                            board[i][j] = candidates[0]
+                            stop = 0
+            if stop:
+                break
+        
+        for i in range(9):
+            for j in range(9):
+                if board[i][j]==0:
+                    zero_pos.append([j, i])
+                    
         dfs(board, 0, zero_pos)
         
         for i in range(9):
