@@ -24,3 +24,7 @@ class Solution:
                 return recursion(n-1, ret)
         
         return recursion(n, base)
+    
+    
+a = Solution()
+print(a.countAndSay(29))
