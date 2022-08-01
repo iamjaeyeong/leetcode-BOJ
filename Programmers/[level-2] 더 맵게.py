@@ -16,7 +16,7 @@ def solution(scoville, K):
         if len(h)<2 or h[0]>=K:
             break
         else:
-            m1, m2 = heapq[].heappop(h), heapq.heappop(h)
+            m1, m2 = heapq.heappop(h), heapq.heappop(h)
             heapq.heappush(h, m1 + 2 * m2)
             cnt += 1
     
