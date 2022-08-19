@@ -51,12 +51,6 @@ def bfs(board, check, visits, ret=[[], [], 0], door_visit=False):
         if next_visit:
             bfs(board, check, next_visit, ret=ret)
             
-        
-    # door 발견
-    # key 발견
-    # 서류 발견
-    
-
 def main():
     h, w = map(int, input().split())
     board = []
